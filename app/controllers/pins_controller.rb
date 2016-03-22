@@ -48,6 +48,6 @@ class PinsController < ApplicationController
 	end
 
 	def get_and_show_pins
-        @pins = Pin.paginate(page: params[:page], per_page: 3)
+        @pins = Pin.paginate(page: params[:page], per_page: 5)
     end
 end
